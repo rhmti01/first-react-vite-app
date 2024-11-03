@@ -1,10 +1,14 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
+// import from ReactDOM 
+import ReactDOM  from "react-dom/client";
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+// main component (not a function!!!)
+function App() {
+    return <h1> Hi React Gangs </h1>
+}
+
+// concecting virtual-dom with real dom with ReactDOM library
+const root = document.getElementById("root")
+
+ReactDOM.createRoot(root).render(<App />)
+
+
